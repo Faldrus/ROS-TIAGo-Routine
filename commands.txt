@@ -1,0 +1,27 @@
+# UNICO LAUNCH FILE AGGIUNTO VEDI SOTTO
+● Start the simulation and MoveIt:
+roslaunch tiago_iaslab_simulation start_simulation.launch world_name:=ias_lab_room_full_tables
+
+● AprilTag:
+roslaunch tiago_iaslab_simulation apriltag.launch
+
+● Navigation stack:
+roslaunch tiago_iaslab_simulation navigation.launch
+
+● Human Service node:
+rosrun tiago_iaslab_simulation human_node
+
+● Launch file
+roslaunch assignment2 launch_movement.launch
+
+PER VEDERE IMMAGINI APRILTAG:
+rosrun rqt_image_view rqt_image_view
+
+
+# Setup env GUIDA FINALE
+start_tiago
+source /opt/ros/noetic/setup.bash && source /tiago_public_ws/devel/setup.bash && cd ~/catkin_ws && source devel/setup.bash
+roslaunch assignment2 setup_env.launch
+
+# Per eseguire il codice
+roslaunch assignment2 launch_movement.launch

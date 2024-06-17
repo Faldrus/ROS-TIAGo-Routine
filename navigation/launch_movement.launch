@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+	<arg name="x" />
+	<arg name="y" />
+	<arg name="or" />
+	
+	<node name="proxy_node" pkg="navigation" type="proxy" output="screen" />
+	<node name="user_node" pkg="navigation" type="user" output="screen" args="$(arg x) $(arg y) $(arg or)" />
+</launch>

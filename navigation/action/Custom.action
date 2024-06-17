@@ -1,0 +1,20 @@
+# Goal
+float32 x_goal
+float32 y_goal
+float32 orientation
+---
+# Result
+bool result
+position[] obstacles
+---
+# Feedback
+int32 status 
+# The status variable represents the status of the tiago robot
+# 0: robot has stopped
+# 1: robot is moving
+# 2: robot started detection
+# 3: detection finished
+# 4: idle
+# -1: Unknown state
+# -2: Error state
+position robot_pos

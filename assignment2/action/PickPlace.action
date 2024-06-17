@@ -1,0 +1,11 @@
+# Goal
+geometry_msgs/Pose marker_pose
+int32 marker_ID
+float32 marker_size
+bool pickOrPlace # true=pick, false=place
+---
+# Result 
+bool success
+---
+# Feedback 
+string status
